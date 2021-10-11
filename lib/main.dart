@@ -103,11 +103,14 @@ class _SliderState extends State<Slider> {
               ),
             ),
             Expanded(
-              child: Column(
-                children: [
-                  Text(slides[currentSlide][1]),
-                  Text(slides[currentSlide][2]),
-                ],
+              child: Container(
+                margin: const EdgeInsets.only(top: 40),
+                child: Column(
+                  children: [
+                    Text(slides[currentSlide][1]),
+                    Text(slides[currentSlide][2]),
+                  ],
+                ),
               ),
             ),
           ],
